@@ -28,6 +28,7 @@
     "all": "npm-run-all clean lint build build:es5 test",
     "build": "babel -d lib src",
     "build:es5": "BABEL_ENV=es5 babel -d es src",
+    "changelog": "node scripts/gitlog",
     "clean": "rimraf lib es coverage .nyc_output",
     "clean:all": "npm-run-all clean:node_modules clean",
     "clean:node_modules": "rimraf node_modules",
